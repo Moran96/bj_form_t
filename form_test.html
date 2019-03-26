@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document_form</title>
+
+    <style>
+        textarea{
+            resize: none;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- form表单 
+            action  提交表单到后台的地址
+            method  提交方式GET或POST
+
+            get方式提交：
+                URL： http://c14.bluej.cn/api/form.php?username=hehe&password=444
+                ?代表查询字符串 就是给URL之间传值使用的 同时不影响页面文档的正常访问
+
+                1.安全性较低
+                2.传值数量受URL长度限制
+                3.简单直接的请求方式，数据体积较小
+
+            post方式提交：
+                URL： http://c14.bluej.cn/api/form.php
+
+                1.安全性略好于get （数据放在form data中）
+                2.携带的数据远多于get
+                3.相对而言POST方式需要特殊处理(发请求 和 特殊请求)
+    -->
+    <form action="http://c14.bluej.cn/api/form.php" method="POST">
+        <!-- text 文本类型 
+            placeholder 输入框提示语
+            value 输入框值 可初始设置
+            name name和value涉及与后台的信息交互
+        -->
+        <span>姓名</span>
+        <input type="text" placeholder="请输入英文名" value="hehe" name="username"> <br>
+        <!-- passw 密码类型 -->
+        <span>密码</span>
+        <input type="password" placeholder="请输入密码" value="444" name="password"> <br>
+        
+        <span>单选</span>
+        <!-- 多个radio放入同一组才可以单选 利用name解决 
+            label的for属性和表单元素的ID相同时，可点击label触发表单选中
+        -->
+        <input type="radio" value="man" name="sex" id="boy"> <label for="boy">男</label>
+        <input type="radio" value="woman" name="sex" id="girl"> <label for="girl">女</label>
+        <br>
+
+        <span>多选</span>
+        <!-- 区别：1.checkbox 2.name -->
+        <input type="checkbox" name="skill" value="html" id="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" name="skill" value="css" id="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="skill" value="js" id="js">
+        <label for="js">JS</label>
+        <br>
+
+        <span>下拉框</span>
+        <select name="location" id="">
+            <optgroup label="China">
+                <option value="guangzhou">guangzhou</option>
+                <option value="shanghai">shanghai</option>
+                <option value="beijing">beijing</option>
+            </optgroup>
+            <optgroup label="America">
+                <option value="ssss">ssss</option>
+                <option value="NY">NY</option>
+            </optgroup>
+        </select>
+        <br>
+
+        <span>文本域</span> <br>
+        <!-- textarea 置换元素，不独占一行，能设置宽高 -->
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <!-- <textarea name="" id="" width="300" rows="50"></textarea> -->
+        <br>
+
+        <button>按钮</button>
+        <!-- 可提交 -->
+        <input type="button" value="xxxx">
+        <!-- 不可提交 -->
+        <input type="image" src="./img">
+        <!-- 可提交 -->
+
+        <br>
+        <!-- 提交表单 submit -->
+        <input type="submit">
+
+    </form>
+
+    
+</body>
+</html>
