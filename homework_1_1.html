@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Homework2.0</title>
+    <title>Homework1.1</title>
+    <style>
+        td{
+            padding: 0;
+        }
+        textarea{
+            resize: none;
+        }
+    </style>
 </head>
 <body>
-    <table border="1" cellspcing="1" cellpadding="10">
+    <table border="0" cellspcing="1" cellpadding="10">
         <thead>
-            <th width="100" align="left"><span>昵称:</span></th>
-            <th width="400" align="left"><input type="text" placeholder="请输入昵称"></th>
+            <th width="150" align="left"><span></span></th>
+            <th width="400" align="left"></th>
         </thead>
 
         <tbody>
             <tr>
-                <td  align="left"><span>登录名:</span></td>
-                <td  align="left"><input type="text" placeholder="请输入登录名"></td>
-            </tr>
-
-            <tr>
-                <td  align="left"><span>密码:</span></td>
+                <td  align="right"><span>用户名:</span></td>
                 <td  align="left"><input type="text" placeholder=""></td>
             </tr>
 
             <tr>
-                 <td  align="left"><span>确认密码:</span></td>
+                <td  align="right"><span>密码:</span></td>
+                <td  align="left"><input type="text" placeholder=""></td>
+            </tr>
+
+            <tr>
+                 <td  align="right"><span>确认密码:</span></td>
                  <td  align="left"><input type="text" placeholder=""></td>
             </tr>
             
             <tr>
-                <td><span>性别:</span></td>
+                <td align="right"><span>性别:</span></td>
                 <td>
-                    <input type="radio" name="sex" value="secret" id="hw1_sec"> <label for="hw1_sec">保密</label>
                     <input type="radio" name="sex" value="man" id="hw1_man"> <label for="hw1_man">男</label>
                     <input type="radio" name="sex" value="woman" id="hw1_woman"> <label for="hw1_woman">女</label>
                 </td>
             </tr>
             
             <tr>
-                <td><span>喜欢的水果:</span></td>
+                <td align="right"><span>爱好:</span></td>
                 <td>
-                    <input type="checkbox" name="fru" value="apple" id="hw1_apple"> <label for="hw1_apple">苹果</label>
-                    <input type="checkbox" name="fru" value="pear" id="hw1_pear"> <label for="hw1_pear">雪梨</label>
-                    <input type="checkbox" name="fru" value="mango" id="hw1_mango"> <label for="hw1_mango">芒果</label>
-                    <input type="checkbox" name="fru" value="banana" id="hw1_banana"> <label for="hw1_banana">香蕉</label>
-                    <input type="checkbox" name="fru" value="peach" id="hw1_peach"> <label for="hw1_peach">水蜜桃</label>
+                        <input type="checkbox" name="hob" value="music" id="hw1_music"> <label for="hw1_music">听音乐</label>
+                        <input type="checkbox" name="hob" value="movie" id="hw1_movie"> <label for="hw1_movie">看电影</label>
+                        <input type="checkbox" name="hob" value="game" id="hw1_game"> <label for="hw1_game">玩游戏</label>
                 </td>
             </tr>
             
             <tr>
-                <td><span>所在地区:</span></td>
+                <td align="right"><span>你坐在的城市:</span></td>
                 <td>
                     <select name="location" id="">
                             <optgroup label="广东省">
@@ -64,16 +69,16 @@
             </tr>
             
             <tr>
-                <td><span>上传头像:</span></td>
+                <td align="right"><span>照片:</span></td>
                 <td>
                     <input type="file">
                 </td>
             </tr>
             
             <tr>
-                <td><span>个人简介:</span></td>
+                <td align="right"><span>个人简介:</span></td>
                 <td>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" id="" cols="70" rows="6"></textarea>
                 </td>
             </tr>
             
