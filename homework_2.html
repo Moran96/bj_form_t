@@ -15,90 +15,91 @@
     </style>
 </head>
 <body>
-    <table border="1" cellspcing="1" cellpadding="10">
-        <thead>
-            <th width="100" align="left"><span>昵称:</span></th>
-            <th width="400" align="left"><input type="text" placeholder="请输入昵称"></th>
-        </thead>
+    <form action="http://c14.bluej.cn/api/form.php" method="POST">
+        <table border="1" cellspcing="1" cellpadding="10">
+            <thead>
+                <th width="100" align="left"><span>昵称:</span></th>
+                <th width="400" align="left"><input type="text" placeholder="请输入昵称" name="name"></th>
+            </thead>
 
-        <tbody>
-            <tr>
-                <td  align="left"><span>登录名:</span></td>
-                <td  align="left"><input type="text" placeholder="请输入登录名"></td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td  align="left"><span>登录名:</span></td>
+                    <td  align="left"><input type="text" placeholder="请输入登录名" name="username"></td>
+                </tr>
 
-            <tr>
-                <td  align="left"><span>密码:</span></td>
-                <td  align="left"><input type="text" placeholder=""></td>
-            </tr>
+                <tr>
+                    <td  align="left"><span>密码:</span></td>
+                    <td  align="left"><input type="password" name="password"></td>
+                </tr>
 
-            <tr>
-                 <td  align="left"><span>确认密码:</span></td>
-                 <td  align="left"><input type="text" placeholder=""></td>
-            </tr>
-            
-            <tr>
-                <td><span>性别:</span></td>
-                <td>
-                    <input type="radio" name="sex" value="secret" id="hw1_sec"> <label for="hw1_sec">保密</label>
-                    <input type="radio" name="sex" value="man" id="hw1_man"> <label for="hw1_man">男</label>
-                    <input type="radio" name="sex" value="woman" id="hw1_woman"> <label for="hw1_woman">女</label>
-                </td>
-            </tr>
-            
-            <tr>
-                <td><span>喜欢的水果:</span></td>
-                <td>
-                    <input type="checkbox" name="fru" value="apple" id="hw1_apple"> <label for="hw1_apple">苹果</label>
-                    <input type="checkbox" name="fru" value="pear" id="hw1_pear"> <label for="hw1_pear">雪梨</label>
-                    <input type="checkbox" name="fru" value="mango" id="hw1_mango"> <label for="hw1_mango">芒果</label>
-                    <input type="checkbox" name="fru" value="banana" id="hw1_banana"> <label for="hw1_banana">香蕉</label>
-                    <input type="checkbox" name="fru" value="peach" id="hw1_peach"> <label for="hw1_peach">水蜜桃</label>
-                </td>
-            </tr>
-            
-            <tr>
-                <td><span>所在地区:</span></td>
-                <td>
-                    <select name="location" id="">
-                            <optgroup label="广东省">
-                                <option value="001">广州市</option>
-                                <option value="002">东莞</option>
-                                <option value="003">汕头</option>
-                            </optgroup>
-                            <optgroup label="内蒙古自治区">
-                                <option value="021">呼和浩特</option>
-                                <option value="022">昭乌达</option>                                    <option value="025">呼伦贝尔</option>
-                            </optgroup>
-                    </select>
-                </td>
-            </tr>
-            
-            <tr>
-                <td><span>上传头像:</span></td>
-                <td>
-                    <input type="file">
-                </td>
-            </tr>
-            
-            <tr>
-                <td><span>个人简介:</span></td>
-                <td>
-                    <textarea name="" id="" cols="60" rows="10"></textarea>
-                </td>
-            </tr>
-            
-            <tr>
-                <td></td>
-                <td>
-                    <button type="submit">提交</button>
-                    <button type="reset">重置</button>
-                    <!-- <input type="submit" value="">
-                    <input type="reset" value=""> -->
-                </td>
-            </tr>
-            
-        </tbody>
-    </table>
+                <tr>
+                    <td  align="left"><span>确认密码:</span></td>
+                    <td  align="left"><input type="password" name="password2"></td>
+                </tr>
+                
+                <tr>
+                    <td><span>性别:</span></td>
+                    <td>
+                        <input type="radio" name="sex" value="secret" id="hw1_sec"> <label for="hw1_sec">保密</label>
+                        <input type="radio" name="sex" value="man" id="hw1_man"> <label for="hw1_man">男</label>
+                        <input type="radio" name="sex" value="woman" id="hw1_woman"> <label for="hw1_woman">女</label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><span>喜欢的水果:</span></td>
+                    <td>
+                        <input type="checkbox" name="fru" value="apple" id="hw1_apple"> <label for="hw1_apple">苹果</label>
+                        <input type="checkbox" name="fru" value="pear" id="hw1_pear"> <label for="hw1_pear">雪梨</label>
+                        <input type="checkbox" name="fru" value="mango" id="hw1_mango"> <label for="hw1_mango">芒果</label>
+                        <input type="checkbox" name="fru" value="banana" id="hw1_banana"> <label for="hw1_banana">香蕉</label>
+                        <input type="checkbox" name="fru" value="peach" id="hw1_peach"> <label for="hw1_peach">水蜜桃</label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><span>所在地区:</span></td>
+                    <td>
+                        <select name="location" id="">
+                                <optgroup label="广东省">
+                                    <option value="广州市">广州市</option>
+                                    <option value="东莞市">东莞市</option>
+                                    <option value="汕头市">汕头市</option>
+                                </optgroup>
+                                <optgroup label="内蒙古自治区">
+                                    <option value="呼和浩特">呼和浩特</option>
+                                    <option value="昭乌达">昭乌达</option>                                    <option value="025">呼伦贝尔</option>
+                                </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><span>上传头像:</span></td>
+                    <td>
+                        <input type="file" name="photo">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td><span>个人简介:</span></td>
+                    <td>
+                        <textarea name="introduction" id="" cols="60" rows="10"></textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">提交</button>
+                        <button type="reset">重置</button>
+
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </form>
 </body>
 </html>

@@ -12,87 +12,87 @@
     </style>
 </head>
 <body>
-    <table border="0" cellspcing="1" cellpadding="10">
-        <thead>
-            <th width="150" align="left"><span></span></th>
-            <th width="400" align="left"></th>
-        </thead>
+    <form action="http://c14.bluej.cn/api/form.php" method="post">
+        <table border="0" cellspcing="1" cellpadding="10">
+            <thead>
+                <th width="150" align="right"><h2>用户注册页面</h2></th>
+                <th width="400" align="left"></th>
+            </thead>
 
-        <tbody>
-            <tr>
-                <td  align="right"><span>用户名:</span></td>
-                <td  align="left"><input type="text" placeholder=""></td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td  align="right"><span>用户名:</span></td>
+                    <td  align="left"><input type="text" name="username"></td>
+                </tr>
 
-            <tr>
-                <td  align="right"><span>密码:</span></td>
-                <td  align="left"><input type="text" placeholder=""></td>
-            </tr>
+                <tr>
+                    <td  align="right"><span>密码:</span></td>
+                    <td  align="left"><input type="password" name="password"></td>
+                </tr>
 
-            <tr>
-                 <td  align="right"><span>确认密码:</span></td>
-                 <td  align="left"><input type="text" placeholder=""></td>
-            </tr>
-            
-            <tr>
-                <td align="right"><span>性别:</span></td>
-                <td>
-                    <input type="radio" name="sex" value="man" id="hw1_man"> <label for="hw1_man">男</label>
-                    <input type="radio" name="sex" value="woman" id="hw1_woman"> <label for="hw1_woman">女</label>
-                </td>
-            </tr>
-            
-            <tr>
-                <td align="right"><span>爱好:</span></td>
-                <td>
-                        <input type="checkbox" name="hob" value="music" id="hw1_music"> <label for="hw1_music">听音乐</label>
-                        <input type="checkbox" name="hob" value="movie" id="hw1_movie"> <label for="hw1_movie">看电影</label>
-                        <input type="checkbox" name="hob" value="game" id="hw1_game"> <label for="hw1_game">玩游戏</label>
-                </td>
-            </tr>
-            
-            <tr>
-                <td align="right"><span>你坐在的城市:</span></td>
-                <td>
-                    <select name="location" id="">
-                            <optgroup label="广东省">
-                                <option value="001">广州市</option>
-                                <option value="002">东莞</option>
-                                <option value="003">汕头</option>
-                            </optgroup>
-                            <optgroup label="内蒙古自治区">
-                                <option value="021">呼和浩特</option>
-                                <option value="022">昭乌达</option>                                    <option value="025">呼伦贝尔</option>
-                            </optgroup>
-                    </select>
-                </td>
-            </tr>
-            
-            <tr>
-                <td align="right"><span>照片:</span></td>
-                <td>
-                    <input type="file">
-                </td>
-            </tr>
-            
-            <tr>
-                <td align="right"><span>个人简介:</span></td>
-                <td>
-                    <textarea name="" id="" cols="70" rows="6"></textarea>
-                </td>
-            </tr>
-            
-            <tr>
-                <td></td>
-                <td>
-                    <button type="submit">提交</button>
-                    <button type="reset">重置</button>
-                    <!-- <input type="submit" value="">
-                    <input type="reset" value=""> -->
-                </td>
-            </tr>
-            
-        </tbody>
-    </table>
+                <tr>
+                    <td  align="right"><span>确认密码:</span></td>
+                    <td  align="left"><input type="password" name="password2"></td>
+                </tr>
+                
+                <tr>
+                    <td align="right"><span>性别:</span></td>
+                    <td>
+                        <input type="radio" name="sex" value="man" id="hw1_man"> <label for="hw1_man">男</label>
+                        <input type="radio" name="sex" value="woman" id="hw1_woman"> <label for="hw1_woman">女</label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right"><span>爱好:</span></td>
+                    <td>
+                            <input type="checkbox" name="hob" value="music" id="hw1_music"> <label for="hw1_music">听音乐</label>
+                            <input type="checkbox" name="hob" value="movie" id="hw1_movie"> <label for="hw1_movie">看电影</label>
+                            <input type="checkbox" name="hob" value="game" id="hw1_game"> <label for="hw1_game">玩游戏</label>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right"><span>你坐在的城市:</span></td>
+                    <td>
+                        <select name="location" id="">
+                                <optgroup label="广东省">
+                                    <option value="广州市">广州市</option>
+                                    <option value="东莞市">东莞市</option>
+                                    <option value="汕头市">汕头市</option>
+                                </optgroup>
+                                <optgroup label="内蒙古自治区">
+                                    <option value="呼和浩特">呼和浩特</option>
+                                    <option value="包头">包头</option>                                    <option value="025">呼伦贝尔</option>
+                                </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right"><span>照片:</span></td>
+                    <td>
+                        <input type="file" name="photo">
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td align="right"><span>个人简介:</span></td>
+                    <td>
+                        <textarea name="introduction" id="" cols="70" rows="6"></textarea>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">提交</button>
+                        <button type="reset">重置</button>
+                    </td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </form>
 </body>
 </html>
